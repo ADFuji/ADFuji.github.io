@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    user-select: none;
+
+    --color-primary: #000;
+    --color-secondary: #fff;
+    --color-tertiary: #333;
+    --color-quaternary: #ccc;
+
+    --font-primary: 'Roboto', sans-serif;
+    --font-secondary: 'Open Sans', sans-serif;
+    --font-tertiary: 'Montserrat', sans-serif;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    background: #f4f4f4;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+section {
+    height: 100vh;
+    background: #000;
+    color: #fff;
+    padding:6rem;
+    overflow: hidden;
+}
+
+footer {
+    min-height: 10vh;
+    background: #000;
+    color: #fff;
+    padding:6rem;
+}
+
+/* FILEPATH: /D:/Code/js/my_portfolio/css/main.css */
+/* BEGIN: ed8c6549bwf9 */
+::-webkit-scrollbar {
+    width: 2px;
+    background: black;
+}
+
+::-webkit-scrollbar-track {
+    background: black;
+    width: 1px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: white;
+    border-radius: 50%;
+    width: 1px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: white;
+}
+
+::-webkit-scrollbar-corner {
+    background: transparent;
+}

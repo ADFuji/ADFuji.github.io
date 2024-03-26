@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel= stylesheet href="css/main.css">
+    <link rel= stylesheet href="css/nav.css">
+    <link rel= stylesheet href="css/sections/home.css">
+    <link rel= stylesheet href="css/sections/about.css">
+    <link rel= stylesheet href="css/sections/projects.css">
+    <link rel= stylesheet href="css/sections/skills.css">
+    <link rel= stylesheet href="css/sections/services.css">
+    <link rel= stylesheet href="css/sections/contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Portfolio TEST - Adrien MOUTET</title>
+</head>
+    <body>
+        <header>
+            <nav>
+                <div class="logo">
+                    <h1><a href="#home">A-MOUTET</a></h4>
+                </div>
+                <ul>
+                    <li><a href="#about-me" data-state="0">À propos</a></li>
+                    <li><a href="#projects" data-state="0">Projets</a></li>
+                    <li><a href="#skills"   data-state="0">Compétences</a></li>
+                    <li><a href="#services" data-state="0">Services</a></li>
+                    <li><a href="#contact"  data-state="0">Contact</a></li>
+                    <script>
+                        const navItems = document.querySelectorAll('nav ul li a');
+                        navItems.forEach(item => {
+                            let timeout;
+                            item.addEventListener('mouseenter', () => {
+                                clearTimeout(timeout);
+                                item.dataset.state = 1;
+                            });
+                            item.addEventListener('mouseleave', () => {
+                                item.dataset.state = 2;
+                                timeout = setTimeout(() => {
+                                    item.dataset.state = 0;
+                                }, 200);
+                            });
+                        });
+                    </script>
+                </ul>
+            </nav>
+            <div class="background"></div>
+        </header>
+
+        <main>
+            <section id="home">
+                <div class="content">
+                    <div class="borderbottom">
+                        <h2>Hey, je suis</h2>
+                        <h1 class="glitch-container" data-text="ADRIEN MOUTET">Adrien MOUTET</h1>
+                        <script src="js/home-glitch.js"></script>
+                        <h2><span class="mixta">Développeur Full Stack <span class="orange">JUNIOR</span></span></h3>
+                    </div>
+                    <h2><a href="#contact">Contactez-moi</a></h2>
+                    <a href="#about-me"><div class="arrow-down"></div></a>
+                </div>
+            </section>
+
+            <section id="about-me">
+                <div class="container">
+                    <div class="about-content">
+                        <div class="about-left">
+                            <!-- Image (remplacer 'your-image.jpg' par votre image) -->
+                            <img src="https://avatars.githubusercontent.com/u/84814195?v=4" alt="Adrien MOUTET">
+                        </div>
+                        <div class="about-right">
+                            <h2>À propos de moi</h2>
+                            <p>Je me présente, <strong>Adrien MOUTET</strong>, 23 ans, développeur fullstack passionné et motivé.</p>
+                            <p>Actuellement en alternance chez NGE, je valide mon BUT Informatique tout en travaillant sur des projets variés.</p>
+                            <!-- Call to Action Button -->
+                            <div class="cta-div">
+                                <a href="#projects" class="cta cta-project">Voir mes projets</a>
+                                <a href="#contact" class="cta cta-contact">Contactez-moi</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="projects">
+                <div class="content">
+                    <h2>Mes Projets</h2>
+                    <div class="left">
+                        <div class="container_list"></div>
+                    </div>
+                    <div class="right">
+                        <div class="container_render"></div>
+                    </div>
+                    <script src="js/projects.js"></script>
+                </div>
+            </section>
+
+            <section id="skills">
+                <h2>Mes Compétences</h2>
+                <div id="skills-container">
+                    <div id="langages" class="skill">
+                        <h3><span class="fa fa-code"></span> Langages</h3>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>PHP</li>
+                            <li>Python</li>
+                            <li>Java</li>
+                            <li>C#</li>
+                            <li>C++</li>
+                            <li>PowerShell</li>
+                        </ul>
+                    </div>
+                    <div id="databases" class="skill">
+                        <h3><span class="fa fa-database"></span> Bases de données</h3>
+                        <ul>
+                            <li>MySQL</li>
+                            <li>PostgreSQL</li>
+                            <li>SQLite</li>
+                            <li>MongoDB</li>
+                        </ul>
+                    </div>
+
+                    <div id="frameworks" class="skill">
+                        <h3><span class="fa fa-cubes"></span> Frameworks</h3>
+                        <ul>
+                            <li>Qt</li>
+                            <li>JavaFX</li>
+                            <li>Java Swing</li>
+                            <li>WinUI3</li>
+                            <li>WPF</li>
+                            <li>ASP.NET</li>
+                            <li>React</li>
+                            <li>Electron.js</li>
+                        </ul>
+                    </div>
+
+                    <div id="tools" class="skill">
+                        <h3><span class="fa fa-tools"></span> Outils</h3>
+                        <ul>
+                            <li>Git</li>
+                            <li>GitHub</li>
+                            <li>GitLab</li>
+                            <li>Visual Studio Code</li>
+                            <li>Visual Studio</li>
+                            <li>Postman</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="services">
+                <h2>Mes Services</h2>
+                <div id="services-container">
+                    <!-- Développement Application -->
+                    <div class="service">
+                        <div class="service-header">
+                            <div class="icon">
+                                <i class="fas fa-laptop-code"></i>
+                            </div>
+                            <h3>Développement d'Applications</h3>
+                        </div>
+                        <div class="service-description">
+                            <p>Conception, développement et maintenance d'applications sur mesure pour répondre à vos besoins spécifiques. Nous mettons l'accent sur la qualité et la performance.</p>
+                            <a href="https://www.malt.fr/profile/adrienmoutet" target="_blank">En savoir plus</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Développement Web -->
+                    <div class="service">
+                        <div class="service-header">
+                            <div class="icon">
+                                <i class="fas fa-globe"></i>
+                            </div>
+                            <h3>Développement Web</h3>
+                        </div>
+                        <div class="service-description">
+                            <p>Création et maintenance de sites web modernes et conviviaux pour votre présence en ligne. Nous mettons l'accent sur le design et la convivialité.</p>
+                            <a href="https://www.malt.fr/profile/adrienmoutet" target="_blank">En savoir plus</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Développement Mobile -->
+                    <div class="service">
+                        <div class="service-header">
+                            <div class="icon">
+                                <i class="fas fa-mobile-alt"></i>
+                            </div>
+                            <h3>Développement Mobile</h3>
+                        </div>
+                        <div class="service-description">
+                            <p>Développement d'applications mobiles réactives et intuitives pour les plateformes iOS et Android. Offrez une expérience exceptionnelle aux utilisateurs mobiles.</p>
+                            <a href="https://www.malt.fr/profile/adrienmoutet" target="_blank">En savoir plus</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Gestion de Projets -->
+                    <div class="service">
+                        <div class="service-header">
+                            <div class="icon">
+                                <i class="fas fa-project-diagram"></i>
+                            </div>
+                            <h3>Gestion de Projets</h3>
+                        </div>
+                        <div class="service-description">
+                            <p>Planification et gestion de projets informatiques pour garantir des résultats réussis. Nous assurons une communication transparente et un suivi rigoureux.</p>
+                            <a href="https://www.malt.fr/profile/adrienmoutet" target="_blank">En savoir plus</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Maintenance -->
+                    <div class="service">
+                        <div class="service-header">
+                            <div class="icon">
+                                <i class="fas fa-tools"></i>
+                            </div>
+                            <h3>Maintenance de Code</h3>
+                        </div>
+                        <div class="service-description">
+                            <p>Analyse et amélioration du code existant pour assurer la performance et la stabilité de vos applications. Optez pour une maintenance proactive.</p>
+                            <a href="https://www.malt.fr/profile/adrienmoutet" target="_blank">En savoir plus</a>
+                        </div>
+                    </div>
+                    
+                    <!-- DevOps -->
+                    <div class="service">
+                        <div class="service-header">
+                            <div class="icon">
+                                <i class="fas fa-server"></i>
+                            </div>
+                            <h3>Intégration Continue</h3>
+                        </div>
+                        <div class="service-description">
+                            <p>Mise en place de pipelines d'intégration continue pour automatiser les déploiements et les tests. Gagnez en efficacité et en qualité.</p>
+                            <a href="https://www.malt.fr/profile/adrienmoutet" target="_blank">En savoir plus</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact">
+                <div class="content">
+                    <div class="left">
+                        <div class="infos">
+                            <div class="info">
+                                <h3>Adresse email:</h3>
+                                <p><a href="mailto:amoutet@nge.fr">amoutet@nge.fr</a></p>
+                            </div>
+                            <div class="info">
+                                <h3>Téléphone:</h3>
+                                <p><a href="tel:+33662811423">06 62 81 14 23</a></p>
+                            </div>
+                        </div>
+                        <form id="sendmail">
+                            <h2>Contactez-moi</h2>
+                            <div class="input">
+                                <label for="name">Nom</label>
+                                <input type="text" name="name" id="name" placeholder="Votre nom" required>
+                            </div>
+                            <div class="input">
+                                <label for="email">Email</label>
+                                <input type="email" name="email" id="email" placeholder="Votre email" required>
+                            </div>
+                            <div class="input">
+                                <label for="message">Message</label>
+                                <textarea name="message" id="message" cols="30" rows="10" maxlength="800" placeholder="Votre message" required></textarea>
+                            </div>
+                            <div class="input">
+                                <input type="submit" id="submit" value="Envoyer">
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="right">
+                        <div id="github" class="social">
+                            <a href="">
+                                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="200" height="200" viewBox="0 0 30 30" style=" fill:#ffffff;">
+                                    <path d="M15,3C8.373,3,3,8.373,3,15c0,5.623,3.872,10.328,9.092,11.63C12.036,26.468,12,26.28,12,26.047v-2.051 c-0.487,0-1.303,0-1.508,0c-0.821,0-1.551-0.353-1.905-1.009c-0.393-0.729-0.461-1.844-1.435-2.526 c-0.289-0.227-0.069-0.486,0.264-0.451c0.615,0.174,1.125,0.596,1.605,1.222c0.478,0.627,0.703,0.769,1.596,0.769 c0.433,0,1.081-0.025,1.691-0.121c0.328-0.833,0.895-1.6,1.588-1.962c-3.996-0.411-5.903-2.399-5.903-5.098 c0-1.162,0.495-2.286,1.336-3.233C9.053,10.647,8.706,8.73,9.435,8c1.798,0,2.885,1.166,3.146,1.481C13.477,9.174,14.461,9,15.495,9 c1.036,0,2.024,0.174,2.922,0.483C18.675,9.17,19.763,8,21.565,8c0.732,0.731,0.381,2.656,0.102,3.594 c0.836,0.945,1.328,2.066,1.328,3.226c0,2.697-1.904,4.684-5.894,5.097C18.199,20.49,19,22.1,19,23.313v2.734 c0,0.104-0.023,0.179-0.035,0.268C23.641,24.676,27,20.236,27,15C27,8.373,21.627,3,15,3z"></path>
+                                </svg>
+                            </a>
+                        </div>
+                        <div id="linkedin" class="social">
+                            <a href="">
+                                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="200" height="200" viewBox="0 0 50 50" style=" fill:#ffffff;">
+                                    <path d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M17,20v19h-6V20H17z M11,14.47c0-1.4,1.2-2.47,3-2.47s2.93,1.07,3,2.47c0,1.4-1.12,2.53-3,2.53C12.2,17,11,15.87,11,14.47z M39,39h-6c0,0,0-9.26,0-10 c0-2-1-4-3.5-4.04h-0.08C27,24.96,26,27.02,26,29c0,0.91,0,10,0,10h-6V20h6v2.56c0,0,1.93-2.56,5.81-2.56 c3.97,0,7.19,2.73,7.19,8.26V39z"></path>
+                                </svg>        <stw.w3.org/2000/svg" x="0px" y="0px" width="200" height="200" viewBox="0 0 50 50" style=" fill:#ffffff;">
+                                    <path d="M 50.0625 10.4375 C 48.214844 11.257813 46.234375 11.808594 44.152344 12.058594 C 46.277344 10.785156 47.910156 8.769531 48.675781 6.371094 C 46.691406 7.546875 44.484375 8.402344 42.144531 8.863281 C 40.269531 6.863281 37.597656 5.617188 34.640625 5.617188 C 28.960938 5.617188 24.355469 10.21875 24.355469 15.898438 C 24.355469 16.703125 24.449219 17.488281 24.625 18.242188 C 16.078125 17.8125 8.503906 13.71875 3.429688 7.496094 C 2.542969 9.019531 2.039063 10.785156 2.039063 12.667969 C 2.039063 16.234375 3.851563 19.382813 6.613281 21.230469 C 4.925781 21.175781 3.339844 20.710938 1.953125 19.941406 C 1.953125 19.984375 1.953125 20.027344 1.953125 20.070313 C 1.953125 25.054688 5.5 29.207031 10.199219 30.15625 C 9.339844 30.390625 8.429688 30.515625 7.492188 30.515625 C 6.828125 30.515625 6.183594 30.453125 5.554688 30.328125 C 6.867188 34.410156 10.664063 37.390625 15.160156 37.472656 C 11.644531 40.230469 7.210938 41.871094 2.390625 41.871094 C 1.558594 41.871094 0.742188 41.824219 -0.0585938 41.726563 C 4.488281 44.648438 9.894531 46.347656 15.703125 46.347656 C 34.617188 46.347656 44.960938 30.679688 44.960938 17.09375 C 44.960938 16.648438 44.949219 16.199219 44.933594 15.761719 C 46.941406 14.3125 48.683594 12.5 50.0625 10.4375 Z"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+                <script src="js/contact.js"></script>
+            </section>
+        </main>
+
+        <footer>
+            <p>© <span class="year"></span> - Adrien MOUTET</p>
+            <script>
+                const year = document.querySelector('.year');
+                year.innerHTML = new Date().getFullYear();
+            </script>
+        </footer>
+
+        <script>
+            // si la résolution est inférieure à 1920*1080, on affiche un message pour dire d'aller sur un support adapté
+            if (window.innerWidth < 1800 || window.innerHeight < 800) {
+                const main = document.querySelector('body');
+                main.innerHTML = '';
+                const message = document.createElement('div');
+                message.classList.add('message');
+                message.innerHTML = '<h1>Le site n\'est pas adapté à votre résolution, veuillez utiliser un support adapté.</h1>';
+                main.appendChild(message);
+
+                const style = document.createElement('style');
+                style.innerHTML = `
+                    body {
+                        background-color: #000;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                    .message {
+                        width: 100%;
+                        height: 100vh;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        color: #fff;
+                        font-size: 2rem;
+                    }
+                `;
+                main.appendChild(style);
+            }
+        </script>
+    </body>
+</html>

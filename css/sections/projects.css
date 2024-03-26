@@ -1,0 +1,385 @@
+#projects .content {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+    padding: 1rem;
+    user-select: none;
+}
+
+#projects .content h2 {
+    font-size: 5rem;
+    font-family: "bebas-neue-semirounded", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    letter-spacing: 1rem;
+    text-transform: uppercase;
+    -webkit-writing-mode: vertical-lr; /* Chrome, Safari, Opera */
+    -ms-writing-mode: tb-lr; /* Internet Explorer */
+    writing-mode: vertical-lr; /* Mozilla Firefox */
+    margin-right: 2rem;
+    /* Symétrie verticale dans Chrome */
+    transform: rotate(-180deg);
+}
+
+#projects .content .left {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#projects .content .right {
+    height: 100%;
+    width: 80%;
+    margin-left: 1rem;
+}
+
+.container_list {
+    width: 100%;
+    height: 100%;
+}
+
+.list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.list li {
+    padding: 0.5rem 0;
+    font-size: 1.3rem;
+    font-weight: 600;
+    font-style: normal;
+    letter-spacing: 0.5rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.list li:hover {
+    color: #fff;
+    transform: translateX(1rem);
+}
+
+.list li.active {
+    color: #fff;
+    transform: translateX(3rem);
+}
+
+.list li.active::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50px);
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: #fff;
+    border-radius: 50%;
+    animation: animate 1s ease infinite;
+}
+
+@keyframes animate {
+    0% {
+        transform: translateY(-50%) translateX(-45px);
+    }
+    50% {
+        transform: translateY(-50%) translateX(-25px);
+    }
+    100% {
+        transform: translateY(-50%) translateX(-45px);
+    }
+}
+
+.container_render {
+    width: 100%;
+    height: 100%;
+    background-color: aliceblue;
+}
+
+.project {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    transition: all 0.3s ease;
+}
+
+.project .project__image {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.project .project__image img {
+    width: inherit;
+    height: inherit;
+    object-fit: cover;
+    object-position: center;
+    transition: all 0.3s ease;
+}
+
+.project .project__content {
+    position: absolute;
+    top: 70%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: rgba(0, 0, 0, 0.8);
+    transition: top 0.3s ease;
+}
+
+.project .project__content .header {
+    margin-bottom: 1rem;
+}
+
+.project .project__content .details {
+    display: none;
+}
+
+.project .project__content .project__title {
+    font-size: 2rem;
+    font-weight: 600;
+    font-style: normal;
+    letter-spacing: 0.5rem;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.project .project__content .project__description {
+    font-size: 1.5rem;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 0.15rem;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.project.notactive .project__content .project__controls {
+    margin-top: 1.2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.project.notactive .project__content .project__controls .project__button {
+    font: var(--font-secondary);
+    text-align: right;
+    padding: 0.5rem 1rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 0.12rem;
+    text-transform: uppercase;
+    border: 1px solid #fff;
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-right: 1rem;
+}
+
+.project.notactive .project__content .project__controls .project__button:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.project.notactive .project__content .project__controls .project__button .project__link {
+    text-decoration: none;
+    color: #fff;
+}
+
+.project.notactive .project__content .project__controls .project__button:hover .project__link {
+    color: #000;
+}
+
+/*
+*
+*   QUAND LA PAGE EST DEPLOYEE
+*
+*/
+
+.project.active .project__content {
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    transition: top 0.3s ease;
+    padding: 2rem;
+}
+
+.project.active .project__content .header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.project.active .project__content .header .project__title {
+    font-size: 3rem;
+    font-weight: 600;
+    font-style: normal;
+    text-transform: uppercase;
+    color: #000;
+}
+
+.project.active .project__content .header .project__description {
+    font-size: 2rem;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: uppercase;
+    color: #000;
+}
+
+.project.active .project__content .header .project__controls {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin:0;
+}
+
+.project.active .project__content .header .project__controls .project__button {
+    border: 1px solid #000;
+}
+
+.project.active .project__content .header .project__controls .project__button {
+    font: var(--font-secondary);
+    text-align: right;
+    padding: 0.5rem 1rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 0.12rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--color-secondary);
+    background-color: var(--color-primary);
+    cursor: pointer;
+    width: 100%;
+    height: 50px;
+    transition: all 0.3s ease;
+}
+
+.project.active .project__content .header .project__controls .project__seemore {
+    color: #fff;
+}
+
+.project.active .project__content .project__controls .project__button:hover {
+    background-color: var(--color-secondary);
+    color: var(--color-primary);
+}
+
+
+.project.active .project__content .project__controls .project__button:hover .project__link {
+    color: var(--color-primary);
+    background-color: var(--color-secondary);
+    border: none;
+}
+
+.project.active .project__content .details {
+    color: #000;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    height: 100%;
+    font-size: 1.5rem;
+    font-family: var(--font-secondary);
+}
+
+.project.active .project__content .details .project__left {
+    width: 30%;
+    height: 100%;
+    margin-right: 1rem;
+}
+
+.project.active .project__content .details .project__left .project__date {
+    font-size: 1rem;
+    font-weight: 400;
+    font-style: italic;
+    text-transform: uppercase;
+    color: #000;
+}
+
+.project.active .project__content .details .project__left .project__stack {
+    font-size: 1.5rem;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: uppercase;
+    color: #000;
+}
+
+.project.active .project__content .details .project__left .project__stack .project__stack_title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-style: normal;
+    text-transform: uppercase;
+    color: #000;
+    margin-bottom: 0.5rem;
+}
+
+.project.active .project__content .details .project__left .project__stack .project__stack_list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.project.active .project__content .details .project__left .project__stack .project__stack_list .project__stack_item {
+    font-size: 1.5rem;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: uppercase;
+    background-color: var(--color-tertiary);
+    color: var(--color-secondary);
+    padding: 0.5rem;
+    width: 100%;
+    margin-bottom: 0.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.project.active .project__content .details .project__left .project__stack .project__stack_list .project__stack_item:last-child {
+    margin-bottom: 0;
+}
+
+.project.active .project__content .details .project__right {
+    width: 70%;
+    height: 100%;
+    padding: 3rem;
+}
+
+.project.active .project__content .details .project__right .project__longdescription {
+    font-size: 1.5rem;
+    font-weight: 400;
+    font-style: normal;
+    color: #000;
+}

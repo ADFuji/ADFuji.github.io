@@ -1,0 +1,73 @@
+/* Style amélioré pour la section de services */
+#services {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+#services h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+#services div#services-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1.5rem;
+}
+
+#services div#services-container .service {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #f8f9fa;
+    color: #333;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    height: 250px;
+    transition: transform 0.2s ease-in-out;
+}
+
+#services div#services-container .service:hover {
+    transform: translateY(-5px);
+}
+
+#services div#services-container .service .service-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+#services div#services-container .service .icon {
+    font-size: 2rem;
+    color: var(--color-primary); /* Utilise ta couleur personnalisée ici */
+}
+
+#services div#services-container .service h3 {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+#services div#services-container .service .service-description {
+    margin-top: 1rem;
+}
+
+#services div#services-container .service p {
+    font-size: 1.2rem;
+    font-weight: 500;
+    font-family: var(--font-secondary); /* Utilise ta police personnalisée ici */
+}
+
+#services div#services-container .service a {
+    text-decoration: none;
+    color: #007bff; /* Utilise ta couleur personnalisée ici */
+    font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+    #services div#services-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

@@ -1,0 +1,160 @@
+#about-me {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#about-me .container {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about-right {
+    margin-left: 50px;
+}
+
+.about-right h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.about-right p {
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.cta-div {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+}
+
+.cta-div .cta {
+    width: 280px;
+    height: 50px;
+    border: 1px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 400;
+    transition: all 0.3s ease;
+}
+
+.cta-div .cta:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+.content-text {
+    margin-top: 20px;
+    width: 100%;
+    color: #000;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-text ul.about-list {
+    list-style: none; /* Supprime les puces classiques */
+    padding: 0;
+}
+
+.content-text ul.about-list li {
+    margin-bottom: 10px; /* Espacement entre les éléments */
+    font-size: 1.1em; /* Taille de police légèrement plus grande */
+}
+
+.content-text ul.about-list li i {
+    color: #4CAF50; /* Couleur des icônes */
+    margin-right: 5px; /* Espacement entre l'icône et le texte */
+}
+
+@media screen and (max-width: 1080px) {
+    #about-me .container {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .about-content {
+        flex-direction: column;
+    }
+
+    .about-right {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .about-right h2 {
+        font-size: 2rem;
+    }
+
+    .about-right p {
+        font-size: 1rem;
+    }
+
+    .cta-div {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cta-div .cta {
+        width: 100%;
+    }
+    .cta-div .cta:last-child {
+        margin-bottom: 15px;
+    }
+
+    .content-text {
+        margin-top: 20px;
+        width: 100%;
+        color: #000;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .content-text ul.about-list {
+        list-style: none; /* Supprime les puces classiques */
+        padding: 0;
+    }
+
+    .content-text ul.about-list li {
+        margin-bottom: 10px; /* Espacement entre les éléments */
+        font-size: 1.1em; /* Taille de police légèrement plus grande */
+    }
+
+    .content-text ul.about-list li i {
+        color: #4CAF50; /* Couleur des icônes */
+        margin-right: 5px; /* Espacement entre l'icône et le texte */
+    }
+}

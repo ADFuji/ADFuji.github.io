@@ -1,0 +1,93 @@
+@import url("https://use.typekit.net/yrl1hxq.css");
+@import url("https://use.typekit.net/yrl1hxq.css");
+@import url("https://use.typekit.net/yrl1hxq.css");
+
+header {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    z-index: 999;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    text-shadow: 0 0 5px white;
+}
+
+nav .logo h1 {
+    font-size: 2.8rem;
+    font-family: "flegrei", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 1rem;
+    font-size: 1.6rem;
+    font-family: "bebas-neue-semirounded", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: uppercase;
+}
+
+nav ul li a {
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+nav ul li a::before {
+    content: "";
+    position: absolute;
+    top: calc(100% / 2 - 2.5px);
+    right: 0;
+    width: 0%;
+    height: 5px;
+    background: #fff;
+    z-index: -1;
+    transition: width 0.3s ease, right 0.3s ease;
+}
+
+nav ul li a[data-state="0"]::before {
+    width: 0%;
+    right: 100%;
+}
+
+nav ul li a[data-state="1"]::before {
+    width: 100%;
+    right: 0;
+}
+
+nav ul li a[data-state="2"]::before {
+    width: 0%;
+    right: 0;
+}
+
+header .background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: #000;
+    z-index: 999;
+    transition: all 0.3s ease;
+}
