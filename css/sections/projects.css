@@ -1,29 +1,23 @@
 #projects .content {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
     height: 100%;
-    padding: 1rem;
     user-select: none;
 }
 
 #projects .content h2 {
-    font-size: 5rem;
-    font-family: "bebas-neue-semirounded", sans-serif;
-    font-weight: 600;
-    font-style: normal;
-    letter-spacing: 1rem;
-    text-transform: uppercase;
-    -webkit-writing-mode: vertical-lr; /* Chrome, Safari, Opera */
-    -ms-writing-mode: tb-lr; /* Internet Explorer */
-    writing-mode: vertical-lr; /* Mozilla Firefox */
-    margin-right: 2rem;
-    /* Symétrie verticale dans Chrome */
-    transform: rotate(-180deg);
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+#projects_container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
 }
 
 #projects .content .left {
-    width: 20%;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -34,7 +28,6 @@
 #projects .content .right {
     height: 100%;
     width: 80%;
-    margin-left: 1rem;
 }
 
 .container_list {
@@ -64,6 +57,7 @@
     text-transform: uppercase;
     cursor: pointer;
     transition: all 0.3s ease;
+    max-width: 80%;
 }
 
 .list li:hover {

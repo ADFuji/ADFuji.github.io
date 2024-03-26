@@ -85,11 +85,13 @@
             <section id="projects">
                 <div class="content">
                     <h2>Mes Projets</h2>
-                    <div class="left">
-                        <div class="container_list"></div>
-                    </div>
-                    <div class="right">
-                        <div class="container_render"></div>
+                    <div id="projects_container">
+                        <div class="left">
+                            <div class="container_list"></div>
+                        </div>
+                        <div class="right">
+                            <div class="container_render"></div>
+                        </div>
                     </div>
                     <script src="js/projects.js"></script>
                 </div>
@@ -307,30 +309,29 @@
 
         <script>
             // si la résolution est inférieure à 1920*1080, on affiche un message pour dire d'aller sur un support adapté
-            if (window.innerWidth < 1800 || window.innerHeight < 800) {
+            if (window.innerWidth < 1080 || window.innerHeight < 600) {
                 const main = document.querySelector('body');
                 main.innerHTML = '';
                 const message = document.createElement('div');
                 message.classList.add('message');
                 message.innerHTML = '<h1>Le site n\'est pas adapté à votre résolution, veuillez utiliser un support adapté.</h1>';
+                message.innerHTML += '<p>La résolution minimale recommandée est de 1920x1080.</p>'
+                message.innerHTML += '<p>Ce portfolio est en cours de développement, merci de votre compréhension.</p>';
                 main.appendChild(message);
 
                 const style = document.createElement('style');
                 style.innerHTML = `
                     body {
                         background-color: #000;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
+                        padding: 15px;
                     }
                     .message {
                         width: 100%;
                         height: 100vh;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
                         color: #fff;
-                        font-size: 2rem;
+                        p {
+                            margin-top: 15px;
+                        }
                     }
                 `;
                 main.appendChild(style);
