@@ -151,25 +151,25 @@ const projects = [
         '14 Mars 2023',
         "Planium est une application de visualisation de calendrier. Elle permet de créer des événements, de les modifier, de les supprimer, et de les partager avec d'autres utilisateurs."
     ),
-    new Project(
-        'NGE Tools',
-        "Application d'administration de postes de travail",
-        'https://www.google.fr',
-        'https://picsum.photos/1920/1079',
-        [
-            "C#",
-            "WPF",
-            "dotNET",
-            "Azure DevOps",
-            "PowerShell"
-        ],
-        'Juillet 2023',
-        "NGE Tools est une application d'administration de postes de travail. Elle permet de gérer les postes de travail, les utilisateurs, les applications, et les licences."
-    ),
+    // new Project(
+    //     'NGE Tools',
+    //     "Application d'administration de postes de travail",
+    //     'https://www.google.fr',
+    //     'https://picsum.photos/1920/1079',
+    //     [
+    //         "C#",
+    //         "WPF",
+    //         "dotNET",
+    //         "Azure DevOps",
+    //         "PowerShell"
+    //     ],
+    //     'Juillet 2023',
+    //     "NGE Tools est une application d'administration de postes de travail. Elle permet de gérer les postes de travail, les utilisateurs, les applications, et les licences."
+    // ),
     new Project(
         "Let's Draw Together",
         'Logiciel de dessin collaboratif',
-        'https://www.google.fr',
+        'https://github.com/ADFuji/lets_draw_together',
         './images/projets/lets_draw_together.png',
         [
             "JavasScript",
@@ -185,7 +185,7 @@ const projects = [
         "Tileset Drawer",
         'Logiciel de dessin pixel art',
         'https://github.com/ADFuji/tileset-drawer',
-        'https://picsum.photos/1920/1080',
+        './images/projets/tileset_drawer.png',
         [
             "Java",
             "Java FX",
@@ -197,8 +197,8 @@ const projects = [
     new Project(
         "Shift-Trackr",
         "Application de gestion d'horaires",
-        'https://www.google.fr',
-        'https://picsum.photos/1920/1081',
+        'https://etulab.univ-amu.fr/shifttrackr',
+        './images/projets/shifttrackr.png',
         ['Angular', 'NodeJS', 'MongoDB', 'Electron'],
         '2020',
         "Shift-Trackr est une application de gestion d'horaires. Elle permet de gérer les horaires des employés, de gérer les plannings, et de gérer les congés."
