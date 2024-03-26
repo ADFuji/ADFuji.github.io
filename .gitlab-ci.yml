@@ -20,6 +20,8 @@ deploy:
     - mv images $LOCAL_DIST/
     - mv js $LOCAL_DIST/
     - mv index.html $LOCAL_DIST/
+    - mv robots.txt $LOCAL_DIST/
+    - mv sitemap.xml $LOCAL_DIST/
     - rsync -avz -e "ssh -i deploy_key -o StrictHostKeyChecking=no" $LOCAL_DIST/* $REMOTE_USER@$REMOTE_HOST:~/$REMOTE_DIST
     - echo "Application successfully deployed to remote server"
   only:
