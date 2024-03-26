@@ -168,7 +168,7 @@ const projects = [
     // ),
     new Project(
         "Let's Draw Together",
-        'Logiciel de dessin collaboratif',
+        'Logiciel de dessin collaboratif (développement en pause)',
         'https://github.com/ADFuji/lets_draw_together',
         './images/projets/lets_draw_together.png',
         [
@@ -183,7 +183,7 @@ const projects = [
     ),
     new Project(
         "Tileset Drawer",
-        'Logiciel de dessin pixel art',
+        'Logiciel de dessin pixel art (développement en pause)',
         'https://github.com/ADFuji/tileset-drawer',
         './images/projets/tileset_drawer.png',
         [
@@ -196,7 +196,7 @@ const projects = [
     ),
     new Project(
         "Shift-Trackr",
-        "Application de gestion d'horaires",
+        "Application de gestion d'horaires (développement en cours)",
         'https://etulab.univ-amu.fr/shifttrackr',
         './images/projets/shifttrackr.png',
         ['Angular', 'NodeJS', 'MongoDB', 'Electron'],
