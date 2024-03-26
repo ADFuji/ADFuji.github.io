@@ -22,6 +22,13 @@ deploy:
     - mv index.html $LOCAL_DIST/
     - mv robots.txt $LOCAL_DIST/
     - mv sitemap.xml $LOCAL_DIST/
+    - mv favicon.ico $LOCAL_DIST/
+    - mv favicon-16x16.png $LOCAL_DIST/
+    - mv favicon-32x32.png $LOCAL_DIST/
+    - mv apple-touch-icon.png $LOCAL_DIST/
+    - mv android-chrome-192x192.png $LOCAL_DIST/
+    - mv android-chrome-512x512.png $LOCAL_DIST/
+    - mv manifest.json $LOCAL_DIST/
     - rsync -avz -e "ssh -i deploy_key -o StrictHostKeyChecking=no" $LOCAL_DIST/* $REMOTE_USER@$REMOTE_HOST:~/$REMOTE_DIST
     - echo "Application successfully deployed to remote server"
   only:
