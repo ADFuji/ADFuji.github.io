@@ -16,10 +16,12 @@ deploy:
     - apt install rsync openssh-client -y # Install rsync
   script:
     - mkdir $LOCAL_DIST
+    - mv public $LOCAL_DIST/
     - mv css $LOCAL_DIST/
     - mv images $LOCAL_DIST/
     - mv js $LOCAL_DIST/
     - mv index.html $LOCAL_DIST/
+    - mv cv.html $LOCAL_DIST/
     - mv robots.txt $LOCAL_DIST/
     - mv sitemap.xml $LOCAL_DIST/
     - mv favicon.ico $LOCAL_DIST/
