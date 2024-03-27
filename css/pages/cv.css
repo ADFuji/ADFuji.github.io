@@ -1,6 +1,128 @@
+main {
+    background: #000;
+    color: #fff;
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+}
+
 section {
     background: #000;
     height: auto;
+    min-height: 100vh;
+}
+
+#resume {
+    display: flex;
+    justify-content: space-around;
+}
+
+#timeline {
+    display: flex;
+    justify-content: space-around;
+
+    #school {
+        width: 40%;
+    }
+
+    #jobs {
+        width: 40%;
+    }
+}
+
+.right {
+    width: 40%;
+    
+    .category {
+        margin-bottom: 20px;
+    }
+
+    #softskills {
+        ul {
+            list-style: none;
+            padding-left: 20px;
+            margin-top: 20px;
+            li {
+                margin-bottom: 10px;
+                a {
+                    color: #fff;
+                }
+            }
+        }
+    }
+
+    #cta {
+        width: 100%;
+        .button{
+            width: 100%;
+            background-color: #000;
+            border: 1px solid #fff;
+            a {
+                color: #fff;
+                width: 100%;
+                height: 100%;
+                display: block;
+                padding: 10px;
+                text-align: center;
+            }
+        }
+        .button:hover {
+            background-color: #fff;
+            a {
+                color: #000;
+            }
+        }
+        ul {
+            list-style: none;
+            padding-left: 0;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            li {
+                padding: 10px;
+                width: 25%;
+                display: flex;
+                justify-content: center;
+                a {
+                    width: 100%;
+                    height: 100%;
+                    color: #fff;
+                }
+            }
+            li:hover {
+                background-color: #fff;
+                a {
+                    color: #000;
+                }
+            }
+        }
+    }
+}
+
+.left {
+    width: 40%;
+
+    .category {
+        margin-bottom: 20px;
+
+        ul {
+            list-style: none;
+            padding-left: 20px;
+            li {
+                margin-bottom: 10px;
+                position: relative;
+
+                ul {
+                    list-style: square;
+                    padding-left: 20px;
+                }
+            }
+        }
+    }
 }
 
 .timeline {
