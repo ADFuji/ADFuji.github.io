@@ -10,7 +10,7 @@ function glitch() {
 
     function glitchEffect() {
         for (let i = 0; i < txt.length; i++) {
-            if (Math.random() < 0.5) { // Probabilité de 50% pour chaque caractère de subir un glitch
+            if (Math.random() < 0.3) { // Probabilité de 50% pour chaque caractère de subir un glitch
                 setTimeout(() => {
                     const char = getRandomChar();
                     container.children[i].innerText = char;
@@ -28,7 +28,7 @@ function glitch() {
         }, Math.random() * 750);
     }
 
-    setInterval(glitchEffect, Math.random() * 1500);
+    setInterval(glitchEffect, 1500);
 }
 
 glitch();
