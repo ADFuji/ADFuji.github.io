@@ -151,6 +151,15 @@ const projects = [
         '14 Mars 2023',
         "Planium est une application de visualisation de calendrier. Elle permet de créer des événements, de les modifier, de les supprimer, et de les partager avec d'autres utilisateurs."
     ),
+    new Project(
+        'Puissance 4',
+        'Jeu de puissance 4 en ligne',
+        'https://p4.fuji.studio',
+        './images/projets/p4.png',
+        [
+            'JavaScript'
+        ],
+    ),
     // new Project(
     //     'NGE Tools',
     //     "Application d'administration de postes de travail",
