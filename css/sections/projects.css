@@ -194,6 +194,25 @@
     margin-right: 1rem;
 }
 
+.project__repo {
+    margin-left: 1rem;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 0.12rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #000;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.project__repo:hover {
+    color: #fff;
+    background-color: #000;
+}
+
 .project.notactive .project__content .project__controls .project__button:hover {
     background-color: #fff;
     color: #000;
@@ -310,6 +329,10 @@
     width: 30%;
     height: 100%;
     margin-right: 1rem;
+}
+.project.active .project__content .details .project__left .project__details {
+    display: flex;
+    align-items: center;
 }
 
 .project.active .project__content .details .project__left .project__date {

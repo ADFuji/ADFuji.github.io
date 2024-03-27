@@ -2,10 +2,11 @@ const container_list = document.querySelector('.container_list');
 const container_render = document.querySelector('.container_render');
 
 class Project {
-  constructor(name, description, link, image, stack, date, long_description) {
+  constructor(name, description, link, image, stack, date, long_description, repo) {
     this.name = name;
     this.description = description;
     this.link = link;
+    this.repo = repo || link;
     this.image = image;
     this.stack = stack;
     this.date = date;
@@ -16,7 +17,10 @@ class Project {
   {
     let details = `
         <div class="project__left">
-            <p class="project__date">${this.date}</p>
+            <div class="project__details">
+                <p class="project__date">${this.date}</p>
+                <a class="project__button project__repo" href="${this.repo}" target="_blank">Voir le repo</a>
+            </div>
             <div class="project__stack">
                 <p class="project__stack_title">Stack technique :</p>
                 <ul class="project__stack_list">
@@ -159,22 +163,10 @@ const projects = [
         [
             'JavaScript'
         ],
+        'Octobre 2023',
+        "Puissance 4 est une application de jeu de puissance 4 réalisé dans le cadre d'un projet d'étude. Actuellement en développement, le jeu permettra de jouer en ligne contre d'autres joueurs.",
+        'https://etulab.univ-amu.fr/s5/projet-puissance-4'
     ),
-    // new Project(
-    //     'NGE Tools',
-    //     "Application d'administration de postes de travail",
-    //     'https://www.google.fr',
-    //     'https://picsum.photos/1920/1079',
-    //     [
-    //         "C#",
-    //         "WPF",
-    //         "dotNET",
-    //         "Azure DevOps",
-    //         "PowerShell"
-    //     ],
-    //     'Juillet 2023',
-    //     "NGE Tools est une application d'administration de postes de travail. Elle permet de gérer les postes de travail, les utilisateurs, les applications, et les licences."
-    // ),
     new Project(
         "Let's Draw Together",
         'Logiciel de dessin collaboratif (développement en pause)',
