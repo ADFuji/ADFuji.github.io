@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-M2GSQ9ZR');</script>
+    <!-- End Google Tag Manager -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio d'Adrien MOUTET, développeur passionné et motivé. N'hésitez pas à me suivre sur mes réseaux et à me contacter pour toute demande de projet.">
+    <link rel="canonical" href="https://adrien-moutet.fr/cv">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/pages/cv.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="../manifest.json">
+    <title>CV - Adrien MOUTET</title>
+</head>
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M2GSQ9ZR"
+        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <header>
+        <nav>
+            <div class="logo">
+                <h1><a href="#home">A-MOUTET</a></h4>
+            </div>
+            <ul>
+                <li><a href="/index.html#about-me" data-state="0">À propos</a></li>
+                <li><a href="/index.html#projects" data-state="0">Projets</a></li>
+                <li><a href="/index.html#skills"   data-state="0">Compétences</a></li>
+                <li><a href="/index.html#services" data-state="0">Services</a></li>
+                <li><a href="/public/cv.html" data-state="0">Mon CV</a></li>
+                <li><a href="/index.html#contact"  data-state="0">Contact</a></li>
+                <script>
+                    const navItems = document.querySelectorAll('nav ul li a');
+                    navItems.forEach(item => {
+                        let timeout;
+                        item.addEventListener('mouseenter', () => {
+                            clearTimeout(timeout);
+                            item.dataset.state = 1;
+                        });
+                        item.addEventListener('mouseleave', () => {
+                            item.dataset.state = 2;
+                            timeout = setTimeout(() => {
+                                item.dataset.state = 0;
+                            }, 200);
+                        });
+                    });
+                </script>
+            </ul>
+        </nav>
+        <div class="background"></div>
+    </header>
+
+    <main>
+        <section>
+            <div id="profil">
+                <h2>Mon Profil</h2>
+                <div class="content">
+                    <div class="left">
+                        <img src="../img/profil.jpg" alt="Photo de profil">
+                    </div>
+                    <div class="right">
+                        <h3>Adrien MOUTET</h3>
+                        <p>Actuellement étudiant en BUT Informatique à
+l’IUT d’Arles, je souhaite rejoindre une école
+d’ingénieur afin de clôturer mon parcours
+scolaire et m’insérer pleinement dans le marché
+du travail.</p>
+                    </div>
+                </div>
+            </div>
+            <div id="xp">
+                <h2>Mes Expériences personnelles</h2>
+                <ul>
+                    <li>
+                        <h3>Président de l'association "AE2i"</h3>
+                        <p>Gestion de l'association, communication, gestion de projet.</p>
+                    </li>
+                    <li>
+                        <h3>Développement de projets personnels</h3>
+                        <ul>
+                            <li>
+                                <h4>Shift Trackr</h4>
+                                <p>Application de gestion d'emploi du temps.</p>
+                            </li>
+                            <li>
+                                <h4>Portfolio</h4>
+                                <p>Site web de présentation de mes compétences et de mes projets.</p>
+                            </li>
+                            <li>
+                                <h4>Tileset Drawer</h4>
+                                <p>Application de dessin de tileset pour jeux vidéo.</p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>Développement de portfolio pour artistes</h3>
+                        <p>Création de site web pour des artistes locaux. (en cours de conception)</p>
+                    </li>
+                </ul>
+            </div>
+            <div id="interets">
+                <h2>Mes Centre d'intérêts</h2>
+                <ul>
+                    <li>
+                        <h3>Musique</h3>
+                        <p>Guitare, Collection de disques, MAO.</p>
+                    </li>
+                    <li>
+                        <h3>Cuisine</h3>
+                        <p>Française et Asiatique.</p>
+                    </li>
+                    <li>
+                        <h3>Informatique</h3>
+                        <p>Création d'un homelab pour héberger mes projets personnels et auto-héberger mes services.</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <div id="school">
+                <h2>Les Formations que j'ai suivies</h2>
+                <div class="timeline">
+                    <div class="outer">
+                        <div class="card">
+                            <h3 class="date">2021 - 2024</h3>
+                            <div class="content">
+                                <div class="header">
+                                    <h4>BUT Informatique</h4>
+                                    <span>IUT d'Aix-Marseille site d'Arles, Arles 13200</span>
+                                </div>
+                                <p>Parcours A: Réalisation d'application, conception, développement, validation.</p>
+                                <p>Spécialisation Imagerie Numérique.</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <h3 class="date">2019 - 2021</h3>
+                            <div class="content">
+                                <div class="header">
+                                    <h4>BTS Electrotechnique</h4>
+                                    <span>Lycée Polyvalent du Rempart, Marseille 13007</span>
+                                </div>
+                                <p>Étude et réalisation d'installations électriques, maintenance, automatisme.</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <h3 class="date">2017 - 2019</h3>
+                            <div class="content">
+                                <div class="header">
+                                    <h4>Bac Technologique STI2D</h4>
+                                    <span>Lycée Adam de Craponne, Salon de Provence 13300</span>
+                                </div>
+                                <p>Spécialité EE (Énergie et Environnement).</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <h3 class="date">2015 - 2017</h3>
+                            <div class="content">
+                                <div class="header">
+                                    <h4>BEP Electrotechnique</h4>
+                                    <span>Lycée Latécoère, Istres 13800</span>
+                                </div>
+                                <p>Étude et réalisation d'installations électriques, maintenance, automatisme.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="jobs">
+                <h2>Mes Expériences Professionnelles</h2>
+                <div class="timeline">
+                    <div class="outer">
+                        <div class="card">
+                            <h3 class="date">2023 - 2024</h3>
+                            <div class="content">
+                                <div class="header">
+                                    <h4>(Alternance) Gestionnaire de Projet</h4>
+                                    <span>NGE, Saint-Etienne-du-Grès 13094</span>
+                                </div>
+                                <p>Conception, développement et validation d'applications (C#, PowerShell).</p>
+                                <p>Recrutement et gestion d'une équipe de développeurs.</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <h3 class="date">
+                                Juillet à Août 2023
+                            </h3>
+                            <div class="content">
+                                <div class="header">
+                                    <h4>(CDD) Adjoint administratif</h4>
+                                    <span>NGE, Saint-Etienne-du-Grès 13094</span>
+                                </div>
+                                <p>Préparation de postes de travail, développement de pages SharePoint et développement de scripts PowerShell.</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <h3 class="date">
+                                Mars à Juin 2023
+                            </h3>
+                            <div class="content">
+                                <div class="header">
+                                    <h4>(Stage) Développeur PowerShell</h4>
+                                    <span>NGE, Saint-Etienne-du-Grès 13094</span>
+                                </div>
+                                <p>Ecriture et documentation de scripts PowerShell pour automatiser des tâches récurrentes. (Déploiement d'application, administration de postes, etc.)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© <span class="year"></span> - Adrien MOUTET</p>
+        <script>
+            const year = document.querySelector('.year');
+            year.innerHTML = new Date().getFullYear();
+        </script>
+    </footer>
+</body>
+</html>

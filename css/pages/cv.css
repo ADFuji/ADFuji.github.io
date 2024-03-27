@@ -1,0 +1,60 @@
+section {
+    background: #000;
+    height: auto;
+}
+
+.timeline {
+    background: var(--primary-color);
+    margin: 20px auto;
+    padding: 20px;
+}
+
+/* Outer Layer with the timeline border */
+.outer {
+    border-left: 2px solid #333;
+}
+
+/* Card container */
+.card {
+    position: relative;
+    margin: 0 0 20px 20px;
+    padding: 10px;
+}
+
+.card .date::before {
+    content: "";
+    position: absolute;
+    top: 25px;
+    left: -28px;
+    width: 10px;
+    height: 10px;
+    background: #333;
+    border: 2px solid #333;
+    border-radius: 50%;
+    transform: translateY(-50%);
+}
+
+.card .content {
+    margin-top: 10px;
+    padding: 10px;
+    background: #333;
+    border-radius: 8px;
+    max-width: 400px;
+}
+
+.card .content .header {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.card .content .header h4 {
+    margin: 0;
+}
+
+.card .content .header span {
+    margin: 0;
+    line-height: 1.5;
+    font-size: 0.8rem;
+    font-weight: 400;
+    font-style: italic;
+}
