@@ -91,3 +91,9 @@ header .background {
     z-index: 999;
     transition: all 0.3s ease;
 }
+
+@media screen and (max-width: 768px) {
+    nav {
+        display: none;
+    }
+}
