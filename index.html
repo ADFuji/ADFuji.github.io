@@ -26,6 +26,12 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/manifest.json">
     <title>Portfolio - Adrien MOUTET</title>
+    <script>
+        // print vw and vh
+        const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
+        const vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0);
+        console.log(`vw: ${vw}, vh: ${vh}`);
+    </script>
 </head>
     <body>
         <!-- Google Tag Manager (noscript) -->
@@ -326,8 +332,10 @@
         </footer>
 
         <script>
+            let dev = false;
             // si la résolution est inférieure à 1920*1080, on affiche un message pour dire d'aller sur un support adapté
-            if (window.innerWidth < 1080 || window.innerHeight < 600) {
+            //if (window.innerWidth < 1080 || window.innerHeight < 600) {
+            if (!dev && (window.innerWidth < 1920 || window.innerHeight < 1080)) {
                 const main = document.querySelector('body');
                 main.innerHTML = '';
                 const message = document.createElement('div');

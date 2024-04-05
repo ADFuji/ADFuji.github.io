@@ -41,12 +41,12 @@
 }
 
 #services div#services-container .service .icon {
-    font-size: 2rem;
+    font-size: 1.3vw;
     color: var(--color-primary); /* Utilise ta couleur personnalisée ici */
 }
 
 #services div#services-container .service h3 {
-    font-size: 1.5rem;
+    font-size: 1.3vw;
     margin: 0;
 }
 
@@ -55,19 +55,61 @@
 }
 
 #services div#services-container .service p {
-    font-size: 1.2rem;
+    font-size: 1vw;
     font-weight: 500;
     font-family: var(--font-secondary); /* Utilise ta police personnalisée ici */
 }
 
 #services div#services-container .service a {
+    font-size: 1vw;
     text-decoration: none;
     color: #007bff; /* Utilise ta couleur personnalisée ici */
     font-weight: bold;
 }
 
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 1090px) {
     #services div#services-container {
         grid-template-columns: repeat(2, 1fr);
+    }
+    #services div#services-container .service {
+        height: 200px;
+    }
+    #services div#services-container .icon {
+        font-size: 3vw;
+    }
+    #services div#services-container h3 {
+        font-size: 1.5vw;
+    }
+    #services div#services-container .service p {
+        font-size: 1.2vw;
+    }
+    #services div#services-container .service a {
+        font-size: 1.2vw;
+    }
+} */
+
+@media screen and (max-width: 768px) {
+    #services {
+        height: auto;
+        padding: 2rem 1rem;
+    }
+    #services div#services-container {
+        grid-template-columns: 1fr;
+    }
+    #services div#services-container .service {
+        height: auto;
+        padding: 0.25rem 0.5rem;
+    }
+    #services div#services-container .icon {
+        font-size: 1.5rem;
+    }
+    #services div#services-container h3 {
+        font-size: 1.5rem;
+    }
+    #services div#services-container .service p {
+        font-size: 1.5vw;
+    }
+    #services div#services-container .service a {
+        font-size: 1.5vw;
     }
 }
