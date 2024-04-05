@@ -231,3 +231,43 @@
         border-color: blue; /* Couleur à 100% de l'animation */
     }
 }
+
+@media screen and (max-width: 1024px) {
+    #contact {
+        height: fit-content;
+    }
+    #contact .content {
+        flex-direction: column;
+        padding: 0 1rem;
+    }
+
+    #contact .content .left {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    #contact .content .right {
+        width: 100%;
+    }
+
+    #contact .content .right {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    #contact .content .right .social {
+        width: 15vw;
+        height: 15vw;
+        a {
+            width: 15vw;
+            height: 15vw;
+        }
+    }
+
+    #contact .content .right .social a:hover::after,
+    #contact .content .right .social a:hover::before {
+        animation: none;
+        display: none;
+    }
+
+}
