@@ -41,12 +41,12 @@
 }
 
 #services div#services-container .service .icon {
-    font-size: 1.3vw;
+    font-size: 1.5rem;
     color: var(--color-primary); /* Utilise ta couleur personnalisée ici */
 }
 
 #services div#services-container .service h3 {
-    font-size: 1.3vw;
+    font-size: 1.5rem;
     margin: 0;
 }
 
@@ -55,61 +55,90 @@
 }
 
 #services div#services-container .service p {
-    font-size: 1vw;
+    font-size: 1.2rem;
     font-weight: 500;
     font-family: var(--font-secondary); /* Utilise ta police personnalisée ici */
 }
 
 #services div#services-container .service a {
-    font-size: 1vw;
+    font-size: 1rem;
     text-decoration: none;
     color: #007bff; /* Utilise ta couleur personnalisée ici */
     font-weight: bold;
 }
 
-/* @media screen and (max-width: 1090px) {
+@media screen and (max-width: 1680px) {
+    #services {
+        height: fit-content;
+    }
     #services div#services-container {
         grid-template-columns: repeat(2, 1fr);
     }
     #services div#services-container .service {
-        height: 200px;
+        
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    #services div#services-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    #services div#services-container .service {
+        height: 250px;
     }
     #services div#services-container .icon {
-        font-size: 3vw;
+        font-size: 4.5vw;
     }
     #services div#services-container h3 {
-        font-size: 1.5vw;
+        font-size: 4vw;
     }
     #services div#services-container .service p {
-        font-size: 1.2vw;
+        font-size: 1.5vw;
     }
     #services div#services-container .service a {
-        font-size: 1.2vw;
+        font-size: 1.5vw;
     }
-} */
+}
+
+@media screen and (max-width: 1080px) {
+    #services div#services-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    #services div#services-container .service {
+    }
+    #services div#services-container .icon {
+        font-size: 4vw;
+    }
+    #services div#services-container h3 {
+        font-size: 4vw;
+    }
+    #services div#services-container .service p {
+        font-size: 1.5vw;
+    }
+    #services div#services-container .service a {
+        font-size: 1.5vw;
+    }
+}
 
 @media screen and (max-width: 768px) {
     #services {
-        height: auto;
-        padding: 2rem 1rem;
     }
     #services div#services-container {
         grid-template-columns: 1fr;
     }
     #services div#services-container .service {
         height: auto;
-        padding: 0.25rem 0.5rem;
     }
     #services div#services-container .icon {
-        font-size: 1.5rem;
+        font-size: 5vw;
     }
     #services div#services-container h3 {
-        font-size: 1.5rem;
+        font-size: 5vw;
     }
     #services div#services-container .service p {
-        font-size: 1.5vw;
+        font-size: 3vw;
     }
     #services div#services-container .service a {
-        font-size: 1.5vw;
+        font-size: 3vw;
     }
 }
