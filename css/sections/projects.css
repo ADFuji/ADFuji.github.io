@@ -400,3 +400,102 @@
     font-style: normal;
     color: #000;
 }
+
+@media screen and (max-width: 1080px) {
+    #projects {
+        height: fit-content;
+    }
+
+    #projects .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #projects .content .right {
+        width: 100%;
+    }
+
+    #projects .content .left {
+        width: 100%;
+    }
+
+    #projects_container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project.active .project__content .details {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project.active .project__content .details .project__left {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .project.active .project__content .details .project__right {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .project.active .project__content .details .project__right .project__longdescription {
+        font-size: 1.2rem;
+    }
+
+    .project.active .project__content .details .project__left .project__stack .project__stack_list .project__stack_item {
+        font-size: 1.2rem;
+    }
+
+    .project.active .project__content .header .project__title {
+        font-size: 2rem;
+    }
+
+    .project.active .project__content .header .project__description {
+        font-size: 1.2rem;
+    }
+
+    .project.active .project__content .header .project__controls .project__button {
+        font-size: 1.2rem;
+    }
+
+    .project.active .project__content .header .project__controls .project__button {
+        padding: 0.5rem 1rem;
+    }
+
+    .project.active .project__content .header .project__controls .project__button .project__link {
+        font-size: 1.2rem;
+    }
+
+    .project.active .project__content .header .project__controls .project__button .project__link {
+        padding: 0.5rem 1rem;
+    }
+
+    .project.active .project__content .details .project__left .project__date {
+        font-size: 1rem;
+    }
+
+    .project.active .project__content .details .project__left .project__stack {
+        font-size: 1.2rem;
+    }
+
+    .project.active .project__content .details .project__left .project__stack .project__stack_title {
+        font-size: 1.2rem;
+    }
+
+    .project.active .project__content .details .project__left .project__stack .project__stack_item {
+        font-size: 1.2rem;
+    }
+
+    .project.active .project__content .details .project__right .project__longdescription {
+        font-size: 1.2rem;
+    }
+
+    .project.active .project__content .details .project__right .project__longdescription {
+        padding: 1rem;
+    }
+
+    .project.active .project__content .details .project__right .project__longdescription {
+        font-size: 1rem;
+    }
+}
