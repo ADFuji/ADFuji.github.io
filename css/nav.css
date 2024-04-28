@@ -18,6 +18,7 @@ nav {
     align-items: center;
     padding: 1rem;
     z-index: 999;
+    background: #00000080;
 }
 
 nav a {
