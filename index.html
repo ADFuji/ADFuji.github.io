@@ -94,13 +94,19 @@
                         </div>
                         <div class="about-right">
                             <h2>À propos de moi</h2>
-                            <p>Je me présente, <strong>Adrien MOUTET</strong>, 23 ans, développeur fullstack passionné et motivé.</p>
+                            <p>Je me présente, <strong>Adrien MOUTET</strong>, <span id="my-age">23</span> ans, développeur fullstack passionné et motivé.</p>
                             <p>Actuellement en alternance chez NGE, je valide mon BUT Informatique tout en travaillant sur des projets variés.</p>
                             <!-- Call to Action Button -->
                             <div class="cta-div">
                                 <a href="#projects" class="cta cta-project">Voir mes projets</a>
                                 <a href="#contact" class="cta cta-contact">Contactez-moi</a>
                             </div>
+                            <script>
+                                const birthdate = new Date('2000-04-25');
+                                const now = new Date();
+                                const age = now.getFullYear() - birthdate.getFullYear();
+                                document.getElementById('my-age').innerHTML = age;
+                            </script>
                         </div>
                     </div>
                 </div>
