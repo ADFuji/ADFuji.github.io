@@ -1,6 +1,5 @@
 User-agent: *
 Allow: /
-Allow: /cv.pdf
+Allow: /public/cv.pdf
 Allow: /cv.html
-Allow: /cv
-Sitemap: https://adrien-moutet.fr/sitemap.xml
+Sitemap: https://www.adrien-moutet.fr/sitemap.xml
